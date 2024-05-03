@@ -19,7 +19,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Breanna Mackroy</div>
+        <div class="logo"></div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="togglemenu()">
             <span></span>
@@ -35,24 +35,32 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="section_pic_containter">
-            <img src="./Profilepic.jpeg" alt="Breanna Profilepic">
+        <div class="section__pic-container">
+            <img class= "profile_pic" src="./Images/Profilepic.jpeg" alt="Breanna Profilepic">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Breanna Mackroy</h1>
-            <p class="section__text__p2">Fullstack Developer</p>
+            <p class="section__text_p2">Fullstack Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./Users/breannamackroy/Fullstack/personalwebsite/Breanna_Mackroy_-_Project_Manager.pdf')">
-                Download CV
+                Resume
                 </button>
                 <button
-                class=""btn btn-color-1"
-                onclick="location.href('./#contact')">
-                Download CV    
+                class="btn btn-color-1" onclick="location.href('./#contact')">
+                Contact Info   
             </button>
         </div>
-
+        <div id="social-container">
+            <img src="./Images/linkedin.png" 
+            alt="My Linkedin Profile" 
+            class="icon" 
+            onclick="location.href='//www.linkedin.com/in/breanna-mackroy-b60a27126/'">
+            <img src="./Images/Github.png" 
+            alt="My Github Profile" 
+            class="icon" 
+            onclick="location.href='//github.com/Bremackroy'">
+        </div>
         </div>
     </section>
     

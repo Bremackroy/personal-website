@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=B, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktopnav">
+        <div class="logo">Breanna Mackroy</div>
+        <div>
+            <ul class="navlinks"></ul>
+                <li><a href="home.html">Home</a></li>  
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Breanna Mackroy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+        </div>
+        <div class="menu-links">
+            <a href="home.html">Home</a>  
+                <li><a href="about.html" onclick="togglemenu()">About</a></li>
+                <li><a href="portfolio.html" onclick="togglemenu()">Portfolio</a></li>
+                <li><a href="contact.html" onclick="togglemenu()">Contact</a></li>
+        </div>
+    </nav>
+   <script src="javascript.js"></script>
+</body>
+</html>

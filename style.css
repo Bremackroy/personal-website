@@ -272,7 +272,7 @@ section {
 /* About */
 
 #about {
-    position:relative
+    position: relative;
 }
 
 .about-containers {
@@ -322,8 +322,10 @@ section {
     margin: auto 0;   
 }
 
+/* Experience */
+
 #experience {
-    position:relative;
+    position: relative;
 }
 
 .experience-sub-title {
@@ -345,13 +347,18 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 article {
-    display: flex
+    display: flex;
     width: 10rem;
     justify-content: space-around;
+    gap: .5rem;
+}
+
+article .icon {
+    cursor: default;
 }
 
 /* Projects */
@@ -362,7 +369,7 @@ article {
 
 .color-container {
     border-color: rgb(163,163,163);
-    background: rgb(250,50,250);
+    background: rgb(250,250,250);
 }
 
 .project-img {
@@ -378,8 +385,10 @@ article {
 
 .project-btn {
     color: black;
-    border-color: rgb(163,163,163)
+    border-color: rgb(163,163,163);
 }
+
+/* contact  */
 
 #contact {
     display: flex;
@@ -394,7 +403,7 @@ article {
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
-    background: rgb(250,250,250)
+    background: rgb(250,250,250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -408,12 +417,11 @@ article {
 }
 
 .contact-info-container p {
-    font-size: large; 
+    font-size: larger; 
 }
 
 .contact-icon {
     cursor: default;
-    height: 2rem;
 }
 
 .email-icon {
@@ -421,7 +429,7 @@ article {
 }
 
 footer {
-    height: 26vh
+    height: 26vh;
     margin: 0 1rem;
 }
 

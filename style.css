@@ -7,8 +7,26 @@
 
 body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;    
-    color: black;
+    color: black; 
+    
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
+
+@keyframes gradient {
+        0% {
+            background-position: 0% 75%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 75%;
+        }
+    }
+
 
 html {
     scroll-behavior: smooth;
@@ -44,6 +62,7 @@ nav {
     gap: 2rem;
     list-style-type: none;
     font-size: 1.5rem;
+    left: 0;
 }
 
 a {
@@ -72,14 +91,15 @@ li {
     margin: 0;
     padding: 10px;
     display: inline;
+    left: 0;
 }
 
 /*Hamburger Menu*/
 
-#hamber-nav {
-    display: none;
+#hamburger-nav {
+    display: flex;
+    left: 0;
 }
-
 .hamburger-menu {
     position: relative;
     display: inline-block;
@@ -178,7 +198,7 @@ section {
 .section__pic-container {
     height: 300px;
     width: 300px;
-    border-radius: 25%%;
+    border-radius: 25%;
     margin: auto;
     display: flex;
     position: relative;
@@ -276,7 +296,7 @@ section {
     background: rgb(53,53,53);
 }
 
-.btn-color-1:hover, {
+.btn-color-1:hover {
     background: rgb(0,0,0);
 }
    
@@ -296,6 +316,14 @@ section {
 
 #about {
     position: relative;
+}
+
+.about-nav-links {
+    text-align: right;
+}
+
+.section_text_p1 {
+   text-align: left;
 }
 
 .about-containers {
@@ -464,4 +492,15 @@ footer {
     margin: 0 1rem;
     color: white;
 }
+
+/* Contact Form*/
+
+.contact-form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;    
+    color: black;
+}
+
 
